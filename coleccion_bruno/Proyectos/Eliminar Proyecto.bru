@@ -1,0 +1,11 @@
+meta {
+  name: Eliminar Proyecto
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/api/proyectos/{{proyectoId}}
+  body: none
+  auth: none
+}

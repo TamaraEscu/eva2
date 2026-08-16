@@ -1,0 +1,25 @@
+meta {
+  name: Crear Proyecto
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/proyectos
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nombre": "Sistema Web",
+    "fecha_inicio": "2026-01-15",
+    "estado": "En curso",
+    "responsable": "Juan Perez",
+    "monto": 1500000
+  }
+}
